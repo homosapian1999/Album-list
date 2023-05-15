@@ -1,0 +1,29 @@
+.update-album {
+  width: 350px;
+  height: 400px;
+  margin: auto;
+  padding-top: 74px;
+  color: #8c4382;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  outline: none;
+  font-size: 18px;
+  width: 100%;
+}
+.form-container {
+  background-color: #f2eaf9;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+.inp-container {
+  margin: 10px;
+}
+
+.id-span {
+  margin-left: 10px;
+}
