@@ -1,0 +1,38 @@
+.add-album-container {
+  width: 350px;
+  height: 400px;
+  margin: auto;
+  padding-top: 74px;
+  color: #8c4382;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  outline: none;
+  font-size: 18px;
+  width: 100%;
+}
+
+.add-album-form {
+  background-color: #f2eaf9;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+.add-btn {
+  background-color: transparent;
+  color: #8c4382;
+  padding: 5px 20px;
+  cursor: pointer;
+  font-size: 15px;
+  border: 2px solid #8c4382;
+  transition: background-color 0.2s;
+  margin: 20px;
+}
+
+.add-btn:active {
+  background-color: #8c4382;
+  color: #f2eaf9;
+}

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import AlbumsList from "./AlbumsList";
 import UpdateAlbum from "./UpdateAlbum";
 import { useState, useEffect } from "react";
+import AddAlbum from "./AddAlbum";
 
 function App() {
   const [albums, setAlbums] = useState([]);
@@ -29,6 +30,21 @@ function App() {
     setAlbums((prevAlbums) => prevAlbums.filter((album) => album.id !== id));
   };
 
+  const addItemsToAlbum = (userId, title) => {
+    const data = {
+      userId: userId,
+      title: title,
+    };
+    fetch("https://jsonplaceholder.typicode.com/albums", {
+      method: "POST",
+      headers: {
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
+    alert("Data added successfully");
+  };
+
   return (
     <div className="App">
       <Router>
@@ -42,6 +58,10 @@ function App() {
           <Route
             path="/update-album/:id"
             element={<UpdateAlbum albums={albums} />}
+          ></Route>
+          <Route
+            path="/add-album"
+            element={<AddAlbum albums={albums} addToList={addItemsToAlbum} />}
           ></Route>
         </Routes>
       </Router>
