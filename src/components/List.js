@@ -4,15 +4,15 @@ import "../css/List.css";
 // useHistory has been replaced with useNavigate
 import { Link, useNavigate } from "react-router-dom";
 
-const List = ({ album }) => {
+const List = ({ album, onDelete }) => {
   const navigate = useNavigate();
   if (!album) {
-    // console.log("EMpty");
     return;
   }
   const handleClick = () => {
     navigate(`/update-album/${album.id}`);
   };
+
   return (
     <div className="list">
       <h3>{album.title}</h3>
@@ -22,7 +22,14 @@ const List = ({ album }) => {
             Update
           </button>
         </Link>
-        <button className="delete-btn">Delete</button>
+        <button
+          className="delete-btn"
+          onClick={() => {
+            onDelete(album.id);
+          }}
+        >
+          Delete
+        </button>
       </div>
     </div>
   );

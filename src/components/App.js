@@ -22,11 +22,23 @@ function App() {
     fetchData();
   }, []);
 
+  const handleDeleteAlbum = (id) => {
+    fetch("https://jsonplaceholder.typicode.com/albums", {
+      method: "DELETE",
+    });
+    setAlbums((prevAlbums) => prevAlbums.filter((album) => album.id !== id));
+  };
+
   return (
     <div className="App">
       <Router>
         <Routes>
-          <Route path="/" element={<AlbumsList albums={albums} />}></Route>
+          <Route
+            path="/"
+            element={
+              <AlbumsList albums={albums} onDelete={handleDeleteAlbum} />
+            }
+          ></Route>
           <Route
             path="/update-album/:id"
             element={<UpdateAlbum albums={albums} />}
