@@ -1,27 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-}
-
-body {
-  width: 100vw;
-  background-color: #dce0fd;
-}
-
-button {
-  /* outline: none; */
-  border: none;
-  cursor: pointer;
-}
-
 /* Navbar styling */
 
 .navbar {
-  width: 100vw;
+  width: 100%;
   padding: 20px 20px;
   display: flex;
   justify-content: space-between;

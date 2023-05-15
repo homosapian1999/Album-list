@@ -1,0 +1,41 @@
+/* Album-list style */
+.albums-list {
+  width: 70%;
+  margin: auto;
+  padding-top: 73px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.list {
+  width: 300px;
+  height: 200px;
+  background-color: #f1c9ec;
+  margin-bottom: 5px;
+  color: #8c4382;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.list h3 {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.button-group {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.update-btn,
+.delete-btn {
+  color: #8c4382;
+  padding: 10px 15px;
+  border: 2px solid #8c4382;
+  background-color: #f2eaf9;
+  border-radius: 4px;
+}
