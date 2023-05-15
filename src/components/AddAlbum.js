@@ -1,5 +1,5 @@
 import "../css/AddAlbum.css";
-import Navbar from "./Navbar";
+
 import { Link } from "react-router-dom";
 
 const AddAlbum = ({ albums, addToList }) => {
@@ -10,7 +10,6 @@ const AddAlbum = ({ albums, addToList }) => {
   };
   return (
     <>
-      <Navbar />
       <div className="add-album-container">
         <div className="add-album-form">
           <h4>Enter new Album Details</h4>

@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 import AddAlbum from "./AddAlbum";
 
 function App() {
+  // Setting up the react hook
   const [albums, setAlbums] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
@@ -23,6 +24,7 @@ function App() {
     fetchData();
   }, []);
 
+  // Function for delete
   const handleDeleteAlbum = (id) => {
     fetch("https://jsonplaceholder.typicode.com/albums", {
       method: "DELETE",
@@ -30,6 +32,7 @@ function App() {
     setAlbums((prevAlbums) => prevAlbums.filter((album) => album.id !== id));
   };
 
+  // Function to add Items;
   const addItemsToAlbum = (userId, title) => {
     const data = {
       userId: userId,
