@@ -27,3 +27,20 @@ input {
 .id-span {
   margin-left: 10px;
 }
+
+.save-btn,
+.exit-btn {
+  background-color: transparent;
+  color: #8c4382;
+  padding: 5px 20px;
+  cursor: pointer;
+  font-size: 15px;
+  border: 2px solid #8c4382;
+  transition: background-color 0.2s;
+  margin: 20px;
+}
+
+.save-btn:active {
+  background-color: #8c4382;
+  color: #f2eaf9;
+}

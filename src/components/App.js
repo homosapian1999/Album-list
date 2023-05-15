@@ -28,7 +28,7 @@ function App() {
         <Routes>
           <Route path="/" element={<AlbumsList albums={albums} />}></Route>
           <Route
-            path="/update-album"
+            path="/update-album/:id"
             element={<UpdateAlbum albums={albums} />}
           ></Route>
         </Routes>
