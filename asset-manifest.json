@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/homosapian1999/Album-list/static/css/main.55f7a296.css",
-    "main.js": "/homosapian1999/Album-list/static/js/main.785e3cb7.js",
-    "index.html": "/homosapian1999/Album-list/index.html",
-    "main.55f7a296.css.map": "/homosapian1999/Album-list/static/css/main.55f7a296.css.map",
-    "main.785e3cb7.js.map": "/homosapian1999/Album-list/static/js/main.785e3cb7.js.map"
+    "main.css": "/Album-list/static/css/main.55f7a296.css",
+    "main.js": "/Album-list/static/js/main.785e3cb7.js",
+    "index.html": "/Album-list/index.html",
+    "main.55f7a296.css.map": "/Album-list/static/css/main.55f7a296.css.map",
+    "main.785e3cb7.js.map": "/Album-list/static/js/main.785e3cb7.js.map"
   },
   "entrypoints": [
     "static/css/main.55f7a296.css",
